@@ -1,0 +1,89 @@
+# ==========================================
+# ESP-IDF & Build Artifacts 
+# ==========================================
+# Binarios y carpetas de compilación
+build/
+**/build/
+*.bin
+*.elf
+*.map
+flasher_args.json
+
+# Archivos generados por Kconfig / idf.py menuconfig
+sdkconfig
+sdkconfig.old
+sdkconfig.*
+!sdkconfig.defaults
+!sdkconfig.defaults.*
+
+# ESP Component Manager y dependencias descargadas
+managed_components/
+dependencies.lock
+/components/.idf/
+**/components/.idf/
+.espressif/
+
+
+# ==========================================
+# IDEs, Editores y Herramientas C/C++
+# ==========================================
+# VS Code / VSCodium
+.vscode/
+.devcontainer/
+
+# Clang / Language Servers
+.clangd/
+.ccls-cache/
+compile_commands.json
+
+# JetBrains / CLion
+.idea/
+cmake-build-*/
+
+# Visual Studio y workspaces genéricos
+*.user
+*.workspace
+*.suo
+*.sln.docstates
+
+
+# ==========================================
+# Entornos Python & Scripts Locales
+# ==========================================
+# Bytecode y cache
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+
+# Entornos virtuales
+venv/
+.venv/
+env/
+ENV/
+
+# Scripts locales de soporte
+generate_md.py
+
+
+# ==========================================
+# Archivos del Sistema Operativo & Temporales
+# ==========================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux y editores de terminal
+.directory
+*~
+*.swp
+*.swo
+*.bak
+*.tmp
+*.log

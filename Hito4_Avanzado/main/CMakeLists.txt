@@ -1,0 +1,20 @@
+idf_component_register(
+    SRCS 
+        "main.c"
+        "src/wifi_sta.c"
+        "src/mqtt_client_app.c"
+        "src/sensor_adc.c"
+        "src/actuators.c"
+    INCLUDE_DIRS 
+        "include"
+    REQUIRES 
+        nvs_flash 
+        esp_netif 
+        esp_event 
+        esp_wifi 
+        mqtt 
+        json 
+        esp_adc
+        driver
+        ssd1306
+)
